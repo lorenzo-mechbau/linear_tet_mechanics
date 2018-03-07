@@ -113,7 +113,7 @@ PROGRAM LINEARTETEXAMPLE
   WRITE(*,'(A)') "Program starting."
 
   !Set all diganostic levels on for testing
-  CALL cmfe_DiagnosticsSetOn(CMFE_FROM_DIAG_TYPE,[1,2,3,4,5],"Diagnostics",["PROBLEM_FINITE_ELEMENT_CALCULATE"],Err) !CMFE_ALL_DIAG_TYPE
+  CALL cmfe_DiagnosticsSetOn(CMFE_FROM_DIAG_TYPE,[1,2,3,4,5],"Diagnostics",["FiniteElasticity_FiniteElementResidualEvaluate"],Err) !CMFE_ALL_DIAG_TYPE
 
   !Get the number of computational nodes and this computational node number
   CALL cmfe_ComputationalNumberOfNodesGet(NumberOfComputationalNodes,Err)
